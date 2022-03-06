@@ -1,0 +1,13 @@
+@echo off
+
+# Target the folder store directory location #
+D:\
+
+# System Date Setting Format and display MMDDYYYY, for example 12/24/2022 #
+
+set MM=%Date:~0,2%
+set DD=%Date:~3,2%
+set YYYY=%Date:~6,4%
+
+set today=%Date:~0,2%%Date:~3,2%%Date:~6,4%
+mkdir %today%
